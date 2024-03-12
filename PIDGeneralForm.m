@@ -19,7 +19,7 @@ error = setPoint - measuredPoint; %Difference between desired value and
 
 Pterm = kP * error; %Error term proportional to current value of error
 
-errorPrevious = f; %error term from previous iteration through loop
+errorPrevious = f; %error from previous iteration through loop
 loopPeriod = g; %time period between loop iterations
 
 Dterm = kd*((error-errorPrevious)/loopPeriod); %Error term proportional to 
